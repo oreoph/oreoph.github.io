@@ -22,7 +22,10 @@ a{
   color:inherit!important;
 }
 
-
+.iframe-container{
+  margin-left:25%;
+  width:50%;
+}
 .carousel-container{
   padding-left:128px!important;
   padding-right:128px!important;
@@ -201,6 +204,11 @@ a{
       padding:2px!important;
       font-size:14px!important;
    }
+
+  .iframe-container{
+    margin-left:5%!important;
+    width:90%!important;
+  }
 
   .textpost-widemargin{
      padding-top:2px;
