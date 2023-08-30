@@ -46,7 +46,6 @@ a:hover{
   color:white;
   /*background: url("mikulego.jpg");*/
   background:#282828;
-  background-size:cover;
   overflow:hidden;
   padding-top:32px;
   padding-bottom:32px;
@@ -138,6 +137,10 @@ a:hover{
   float:left;
 }
 
+.miku-wave{
+  margin:-80px;
+}
+
 .contact-card{
   margin-left:15vw;
   margin-top:15vh;
@@ -227,6 +230,23 @@ a:hover{
   .youtube-container{
     width:90vw;
     height:calc(90vw * 315/560);
+  }
+
+
+  .half-width{
+    margin:10%!important;
+    width:90%!important;
+    float:none!important;
+  }
+
+  .about-text{
+    padding-top:15px!important;
+    margin-left:5%!important;
+    width:90%!important;
+  }
+
+  .miku-wave{
+    margin:0!important;
   }
 
 }
