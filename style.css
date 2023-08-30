@@ -222,6 +222,12 @@ a:hover{
 
   }
 
+  .transparent-box{
+    background: url("bg.png")!important;
+    background-size:cover!important;
+    background-repeat:none!important;
+  }
+
   .video-box{
     float:none!important;
     width:100%!important;
