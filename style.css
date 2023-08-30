@@ -62,7 +62,7 @@ a:hover{
   overflow:hidden;
   color:black;
   background: url("white.png");
-  background-repeat: no-repeat;
+  background-size:cover;
   overflow:hidden;
 }
 
