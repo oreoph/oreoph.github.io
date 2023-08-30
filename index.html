@@ -1,248 +1,185 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Second Sound Studio by Oreophilum</title>
-    <!-- The style.css file allows you to change the look of your web pages.
-         If you include the next line in all your web pages, they will all share the same look.
-         This makes it easier to make new pages for your site. -->
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oreophilum's Official Website</title>
     <link href="style.css" rel="stylesheet" type="text/css" media="all">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="boostrap.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<body>
+	<div id="top" class="transparent-box centered">
+		<div class="header-container">
+			<a href="https://oreophilum.com"><img class="header-logo" src="oreo(3).jpg" style="border-radius:50%" width=30%/></a>
+			<h1>OREOPHILUM'S OFFICIAL WEBSITE</h1>
+			<button class="header-button" onclick="window.location='#about'">About</button> 
+			<button class="header-button" onclick="window.location='#discog'">Discography</button> 
+			<button class="header-button" onclick="window.location='#videos'">Videos</button> 
+			<button class="header-button" onclick="window.location='#contact'">Contact</button> 
+			<button class="header-button" onclick="window.location='secondsound/index.html'">Second Sound Studio</button> 
+		</div>
+		
+	</div>
+	<div id="about" class="miku-box centered">
+		<h1>ABOUT</h1>
+		<div class="about-text">
+			<p>Oreophilum is hatsuneko (残酷なP) and Mizarii (Dear Misery).</p>
+			<p>The duo specialize in using voice synthesizing software (virtual singers, a.k.a. "Vocaloid").</p>
+		</div>
+	</div>
+	<div id="discog" class="transparent-box centered">
+		<h1>DISCOGRAPHY</h1>
+		<h3>Albums & EPs</h3>
+		<a href="#witch"><img class="album-cover" src="discog/2021-10-31 witch.jpg"/></a>
 
-    <style>
-    </style>
-  </head>
+			<div id="witch" class="modalDialog">
+				<div>
+					<a href="#close" title="Close" class="close">X</a>
+					<h3>Witch's Dance EP</h3>
+					<p>Release date: <a href="https://witch.oreophilum.com" target="_blank">2021-10-31</a></p>
+					<p>Tracklist:</p>
+					<ol>
+						<li>Witch's Dance (Ft. Eleanor Forte)</li>
+						<li>Lullaby: to the Stars (Ft. Eleanor Forte)<br><a href="https://www.youtube.com/watch?v=eW0QLN3q57o" target="_blank"><img class="video-icon" src="buttons/ICON-YOUTUBE.png"/></a>
+					<a href="https://www.nicovideo.jp/watch/sm39741552" target="_blank"><img class="video-icon" src="buttons/ICON-NICO.png"/></a></li>
+						<li>March of the Insomniac (Electroacoustic Version) [Ft. Eleanor Forte]</li>
+						<li>Prelude and Fugue: Witch's Slumber (Instrumental)</li>
+					</ol>
+				</div>
+			</div>
 
-  <body>
-    <div id="top" class="logo-heading text-center padding16">
-      <a href="#"><img class="mainlogo" src="studioLOGO.png" alt="Logo"></a>
-    </div>
+		<a href="#dreamscape"><img class="album-cover" src="discog/2023-04-30 dreamscape.jpg"/></a>
 
-<nav class="fancy navbar navbar-inverse ">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle fancy-button" data-toggle="collapse" data-target="#myNavbar"> 
-        <span>MENU</span>
-        <span class="fa fa-bars"></span>                        
-      </button>
-      <a class="fancy-button nav-bigfont navbar-brand" href="#">Home</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="nav-bigfont dropdown">
-          <a class="fancy-button dropdown-toggle" data-toggle="dropdown" href="#">About <span class="caret"></span></a>
-          <ul class="menu-custom dropdown-menu">
-            <li class="toggle-menu-custom"><a href="about.html#">Overview</a></li>
-            <li class="toggle-menu-custom"><a href="about.html#">People</a></li>
-          </ul>
-        </li>
-      </ul>
+			<div id="dreamscape" class="modalDialog">
+				<div>
+					<a href="#close" title="Close" class="close">X</a>
+					<h3>Dreamscape Singularity EP</h3>
+					<p>Release date: 2021-10-31</p>
+					<p>Tracklist:</p>
+					<ol>
+						<li>Dreamscape Singularity (Ft. Hatsune Miku)</li>
+						<li>End of April, Beginning of May (Ft. Hatsune Miku)</li>
+					</ol>
+				</div>
+			</div>
 
-      <ul class="nav navbar-nav">
-        <li class="nav-bigfont dropdown">
-          <a class="fancy-button dropdown-toggle" data-toggle="dropdown" href="#">Services <span class="caret"></span></a>
-          <ul class="menu-custom dropdown-menu">
-            <li class="toggle-menu-custom"><a href="services.html#mixing">Mixing & Mastering</a></li>
-            <li class="toggle-menu-custom"><a href="services.html#recording">Recording</a></li>
-            <li class="toggle-menu-custom"><a href="services.html#composition">Composition & Arrangement</a></li>
-            <li class="toggle-menu-custom"><a href="services.html#transcription">Music Sheet Transcription</a></li>
-          </ul>
-        </li>
-      </ul>
+		<h3>Singles</h3>
+			<a href="#march"><img class="album-cover" src="discog/2021-06-01 march.jpg"/></a>
 
-      <ul class="nav navbar-nav">
-        <li class="nav-bigfont dropdown">
-          <a class="fancy-button dropdown-toggle" data-toggle="dropdown" href="#">Featured <span class="caret"></span></a>
-          <ul class="menu-custom dropdown-menu">
-            <li class="toggle-menu-custom"><a href="featured.html#music">Music</a></li>
-            <li class="toggle-menu-custom"><a href="featured.html#videos">Videos</a></li>
-          </ul>
-        </li>
-      </ul>
+			<div id="march" class="modalDialog">
+				<div>
+					<a href="#close" title="Close" class="close">X</a>
+					<h3>March of the Insomniac (ft. Hatsune Miku)</h3>
+					<a href="https://www.youtube.com/watch?v=5EWCJBMzU-0" target="_blank"><img class="video-icon" src="buttons/ICON-YOUTUBE.png"/></a>
+					<a href="https://www.nicovideo.jp/watch/sm39150952" target="_blank"><img class="video-icon" src="buttons/ICON-NICO.png"/></a>
+					<a href="https://www.nicovideo.jp/watch/sm39150952"/></a>
+					<p>Release date: 2021-06-01</p>
+					<p>Music & Words: hatsuneko</p>
+				</div>
+			</div>
 
-      <ul class="nav navbar-nav">
-        <li class="nav-bigfont dropdown">
-          <a class="fancy-button dropdown-toggle" data-toggle="dropdown" href="#">Associates <span class="caret"></span></a>
-          <ul class="menu-custom dropdown-menu">
-            <li class="toggle-menu-custom"><a href="artists.html#oreophilum"><img class="toggle-menu-logo" src="oreo_large.png" alt="Oreophilum"/></a></li>
-            <li class="toggle-menu-custom"><a href="artists.html#negativefour"><img class="toggle-menu-logo" src="neg4-logo.png" alt="Negative Four"/></a></li>
-            <li class="toggle-menu-custom"><a href="artists.html#partners">Featured Partners</a></li>
-          </ul>
-        </li>
-      </ul>
+			<a class="album-cover" href="#strangeweather"><img class="album-cover" src="discog/2021-08-15 strange weather.jpg"/></a>
 
-      <ul class="nav navbar-nav">
-        <li class="nav-bigfont">
-          <a class="fancy-button" href="#contact">Contact</a>
-        </li>
-      </ul>
+			<div id="strangeweather" class="modalDialog">
+				<div>
+					<a href="#close" title="Close" class="close">X</a>
+					<h3>Strange Weather (ft. Hatsune Miku)</h3>
+					<a href="https://www.youtube.com/watch?v=r1ErOeByoiA" target="_blank"><img class="video-icon" src="buttons/ICON-YOUTUBE.png"/></a>
+					<a href="https://www.nicovideo.jp/watch/sm39182532" target="_blank"><img class="video-icon" src="buttons/ICON-NICO.png"/></a>
+					<p>Release date: 2021-08-15</p>
+					<p>Music & Words: hatsuneko</p>
+				</div>
+			</div>
 
-      <ul class="nav navbar-nav navbar-right">
-        <li class="nav-bigfont">
-          <a href="https://twitter.com/oreophilum" target="_blank"><i class="fa fa-twitter nav-bigfont"></i></a>
-        </li>
-        <li class="nav-bigfont">
-          <a href="https://instagram.com/oreophilum_music" target="_blank"><i class="fa fa-instagram nav-bigfont"></i></a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
+			<a class="album-cover" href="#islejp"><img class="album-cover" src="discog/2022-01-15 isle jp.jpg"/></a>
 
-<div class="section-main text-center half-black">
-<div id="myCarousel" class="carousel slide carousel-container" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <!--
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-    <li data-target="#myCarousel" data-slide-to="3"></li>
-  -->
-  </ol>
+			<div id="islejp" class="modalDialog">
+				<div>
+					<a href="#close" title="Close" class="close">X</a>
+					<h3>Isle of 57 Sunsets (Japanese Version) [Ft. Merrow]</h3>
+					<a href="https://www.youtube.com/watch?v=yDlu-sSN_gw" target="_blank"><img class="video-icon" src="buttons/ICON-YOUTUBE.png"/></a>
+					<p>Release date: 2022-01-15</p>
+					<p>Music: hatsuneko<br>Words: Mizarii</p>
+				</div>
+			</div>
 
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
-    <div class="item active">
-      <a href="https://valentineonmars.tumblr.com/?" target="_blank"><img src="gallery/banner1.jpg" width=100% alt="Negative Four"></a>
-    </div>
+			<a class="album-cover" href="#isleen"><img class="album-cover" src="discog/2022-01-15 isle en.jpg"/></a>
 
-    <div class="item">
-     <a href="https://linktr.ee/oreophilum" target="_blank"><img src="gallery/banner2.jpg" width=100% alt="Oreophilum"></a>
-    </div>
-  </div>
+			<div id="isleen" class="modalDialog">
+				<div>
+					<a href="#close" title="Close" class="close">X</a>
+					<h3>Isle of 57 Sunsets (Ft. Hatsune Miku)</h3>
+					<a href="https://www.youtube.com/watch?v=OoZykYtRbbI&" target="_blank"><img class="video-icon" src="buttons/ICON-YOUTUBE.png"/></a>
+					<p>Release date: 2022-01-15</p>
+					<p>Music: hatsuneko<br>Words: Mizarii</p>
+				</div>
+			</div>
 
-  <!-- Left and right controls -->
-  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-</div>
+			<a class="album-cover" href="#zetsubou"><img class="album-cover" src="discog/2022-04-29 zetsubou.jpg"/></a>
 
-<div class="section-main padding64 section-container bg-white text-black">
-  <div class="text-center">
-    <h1>NEWS</h1>
-  </div>
-  <div class="textpost-widemargin text-center">
-    <p>New cover -- Unwelcome School (Blue Archive OST) ft. Hatsune Miku</p>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/8_Zn6DFYGjU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-  </div>
-</div>
+			<div id="zetsubou" class="modalDialog">
+				<div>
+					<a href="#close" title="Close" class="close">X</a>
+					<h3>絶望のワルツ (Zetsubou no Waltz) [Ft. Hatsune Miku]</h3>
+					<a href="https://www.youtube.com/watch?v=NWRpLdZs4mE" target="_blank"><img class="video-icon" src="buttons/ICON-YOUTUBE.png"/></a>
+					<a href="https://www.nicovideo.jp/watch/sm40445833" target="_blank"><img class="video-icon" src="buttons/ICON-NICO.png"/></a>
+					<p>Release date: 2022-04-29</p>
+					<p>Music & Words: Mizarii</p>
+				</div>
+			</div>
 
+			<a class="album-cover" href="#shindemo"><img class="album-cover" src="discog/2023-02-03 shindemo.jpg"/></a>
 
-<div id="contact" class="section-main padding64 section-container opaque-black">
-  <div class="text-center">
-    <h1>CONTACT</h1>
-  </div>
-  <div class="textpost text-center">
-    <!--
-    <h3 style="color:orange"><strong><i class="fa fa-exclamation"></i>Second Sound Studio is <em>not</em> a business<i class="fa fa-exclamation"></i></strong></h3> -->
-    <p> We are always looking for collaborations and involvement in fun projects.<br>Please check out <a href="services.html" style="text-decoration:underline">Services</a> page for our specialties.</p>
-    <p> For collaboration, services, or other inquiries, please <a href="mailto:oreophilum39@gmail.com" style="color:#f2f542!important">email us</a></p>
-
-    <p style="font-family:monospace;font-size:12px!important;"><br><br><a href="#top"style="text-decoration:underline"> >> Back to Top << </a></p>
-  </div>
-</div>
+			<div id="shindemo" class="modalDialog">
+				<div>
+					<a href="#close" title="Close" class="close">X</a>
+					<h3>わすれられない・しんでも (Wasurerarenai / Shindemo) [Ft. Hatsune Miku]</h3>
+					<a href="https://www.youtube.com/watch?v=YxShYfConfY" target="_blank"><img class="video-icon" src="buttons/ICON-YOUTUBE.png"/></a>
+					<a href="https://www.nicovideo.jp/watch/sm39984282" target="_blank"><img class="video-icon" src="buttons/ICON-NICO.png"/></a>
+					<p>Release date: 2023-02-23</p>
+					<p>Music & Words: hatsuneko</p>
+				</div>
+			</div>
 
 
 
 
-<footer class="custom-footer">  
-  <!--<div class="w3-xlarge w3-padding-32">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
- </div>
-  -->
-  <p style="float:left"><a href="#top" style="color:#fff!important">Back to top</a></p>
-  <p style="float:right;">&copy 2023 Second Sound Studio</p>
- 
-</footer>
+		<h2>Find us on</h2>
+		<button class="social-button"><a href="https://oreophilum.bandcamp.com" target="blank"><img class="social-button-img" src="buttons/BUTTON-BANDCAMP.png" width=100%/></a></button>
+		<button class="social-button"><a href="https://open.spotify.com/artist/4gWdc2HvXKctawUF70V1AQ" target="blank"><img class="social-button-img" src="buttons/BUTTON-SPOTIFY.png" width=100%/></a></button>
+		<button class="social-button"><a href="https://music.apple.com/jp/artist/oreophilum/1564415102" target="blank"><img class="social-button-img" src="buttons/BUTTON-ITUNES.png" width=100%/></a></button>
+		<button class="social-button"><a href="https://www.youtube.com/@oreophilum" target="blank"><img class="social-button-img" src="buttons/BUTTON-YOUTUBE.png" width=100%/></a></button>
+		<button class="social-button"><a href="https://www.deezer.com/us/artist/130553992" target="blank"><img class="social-button-img" src="buttons/BUTTON-DEEZER.png" width=100%/></a></button>
+		<p>and all other streaming services</p>
+	</div>
+	<div id="videos" class="white-box centered">
+		<h1>VIDEOS</h1>
+		<div class="video-box">
+			<h3>New Cover</h3>
+			<p><iframe class="youtube-container" src="https://www.youtube.com/embed/8_Zn6DFYGjU?si=f0bHeL3pfryaCwwO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
+		</div>
+		<div class="video-box">
+			<h3>Playthroughs</h3>
+			<p><iframe class="youtube-container" src="https://www.youtube.com/embed/SV-qaCjmyvQ?si=MyIlkHZFxqC-d_gA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
+		</div>
+	</div>
+	<div id="contact" class="footer-box centered">
+		<div class="contact-card">
+			<h1>CONTACT</h1>
+			<p><a href="https://linktr.ee/oreophilum"><img class="footer-logo" src="oreo(3).jpg" style="border-radius:50%" width=20%/></a></p>
+			<p>We are on social media!</p>
 
+			<button class="social-button"><a href="https://instagram.com/oreophilum_music" target="blank"><img class="social-button-img-blk" src="buttons/BUTTON-INSTA.png" width=100%/></a></button>
+
+			<button class="social-button"><a href="https://twitter.com/oreophilum" target="blank"><img class="social-button-img-blk" src="buttons/BUTTON-TWITTER.png" width=100%/></a></button>
+		</div>
+	</div>
+	<div class="footer-text centered">
+			<hr>
+			<p>&copy 2023 Oreophilum.com<br>Hatsune Miku is a trademark of Crypton Future Media</p>
+			<p style="font-family:Courier"><a href="#top">>>Back to top<<</a></p>
+		</div>
 </body>
 </html>
 
-<!-- -----------------
 
-END OF HTML BODY
-
--------------------- --> 
-
-
-<script>
-// Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-
-// Collapsible
-
-var coll = document.getElementsByClassName("collapsible");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
-    }
-  });
-} 
-
-
-// Slideshow
-let slideIndex = 1;
-showSlides(slideIndex);
-
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("demo");
-  let captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
-} 
-</script>

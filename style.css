@@ -1,16 +1,14 @@
-/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
-   HTML content. To learn how to do something, just try searching Google for questions like
-   "how to change link color." */
+@font-face{
+  font-family:'Infinity';
+  src: url('MADEINFINITY PERSONALUSE-Light.otf');
+}
 
-
-/* ----------------------- GENERAL CSS ---------------------*/
 body {
-        background-image: url('miku.jpg');
+        background-image: url('bg.png');
         background-repeat: no-repeat;
         background-attachment:fixed;
         background-size:cover;
-        color: white!important;
-        font-family: Baskerville!important;
+        font-family:'Infinity';
       }
 
 
@@ -19,392 +17,257 @@ html {
 }
 
 a{
-  color:inherit!important;
+  color:yellow;
 }
 
-.iframe-container{
-  margin-left:25%;
-  width:50%;
+a:hover{
+  color:orange!important;
 }
-.carousel-container{
-  padding-left:128px!important;
-  padding-right:128px!important;
+
+.transparent-box{
+  width:100vw;
+  min-height:100vh;
+  color:white;
+  overflow:hidden;
   padding-top:32px;
   padding-bottom:32px;
 }
 
-.logo-heading{
-   background-image:linear-gradient(#fff, #ccc);
+.miku-box{
+  width:100vw;
+  min-height:100vh;
+  overflow:hidden;
+  color:black;
+  background: url("mikulego.jpg");
+  background-size:cover;
+  overflow:hidden;
+  padding-top:32px;
+  padding-bottom:32px;
 }
 
-.mainlogo{
-   width:20%;
-   min-width:200px;
+.white-box{
+  width:100vw;
+  min-height:100vh;
+  overflow:hidden;
+  color:black;
+  background-color:white;
+  overflow:hidden;
+  padding-top:32px;
+  padding-bottom:32px;
 }
 
-.section-main{ 
+.footer-box{
+  width:100vw;
+  min-height:100vh;
+  overflow:hidden;
+  color:black;
+  background: url("white.png");
+  background-repeat: no-repeat;
+  overflow:hidden;
 }
 
-.section-container{
-   width:90vw!important;
-   margin:5vw!important;
-   height:auto!important;
-   padding-bottom: 2.5rem;
-   overflow: hidden;
+.header-logo{
+  box-shadow: 0 0 15px rgba(255,255,255, 1)!important;
+  border-radius:50%
+  width:50%;
 }
 
-.textpost{
-   padding:16px;
-   font-size:20px!important;
+.header-logo:hover{
+  box-shadow: 0 0 25px rgba(255,255,255, 1)!important;
 }
 
-.textpost-widemargin{
-   padding-top:16px;
-   padding-bottom:16px;
-   padding-left:120px;
-   padding-right:120px;
-   font-size:20px!important;
+.about-text{
+  margin-left:20%;
+  padding-top:64px;
+  width:60%;
+}
+.footer-logo{
+  
+  border-style:solid;
+  color:black;
+  border-radius:50%
+  width:25%;
 }
 
-.half-black{
-   background-color:rgba(0,0,0,0.5)!important;
-}
-
-.half-width{
-  float:left;
-  width:45.9999%;
-}
-
-.third-width{
-  float:left;
-  width:33.32%;
-}
-
-.twothird-width{
-  float:left;
-  width:66.66%;
-}
-.opaque-black{
-  background-color:rgba(0,0,0,0.75)!important;
-}
-
-.bg-white{
-   background-color:#fff!important;
-}
-
-.bg-light-grey{
-  background-color:#ccc!important;
-}
-
-.bg-dark-grey{
-  background-color:rgba(0.8,0.8,0.8,0.8)!important;
-}
-.text-black{
-   color:#000!important;
-}
-
-.text-grey{
-  color:#888!important;
-}
-
-.text-white{
-  color:#fff!important;
-}
-
-.margin64{
-  margin:64px;
-}
-
-.padding16{
-   padding:16px;
-}
-
-.padding16-v{
-   padding-top:16px;
-   padding-bottom:16px;
-}
-.padding32{
-   padding:32px;
-}
-
-.padding64{
-   padding:64px;
-}
-
-.padding64-h{
-   padding-left:64px;
-   padding-right:64px;
-}
-.fancy-button{
-}
-
-.fancy-button:hover{
-   background-color:#fff!important;
-   color:#000!important;
-}
-
-.social-button{
-  color:#000!important;
-}
-
-.social-button-white{
-  color:#fff!important;
-}
-
-.social-button:hover, .social-button-white:hover{
-  opacity:0.60
+.footer-logo:hover{
+  box-shadow: 0 0 3px rgba(50,50,50, 1)!important;
 }
 
 
-.fancy {
-  padding-left:10em;
-  padding-right:10em;
+.header-button{
+  border-style:none;
+  padding:18px;
+  margin:8px;
+  box-shadow: 0 0 10px rgba(255,255,255, 1)!important;
+  background-color:white;
+  color:black;
+  text-decoration:none;
+  width:fit-content;
+  font-family:'Infinity';
+}
+
+.header-button:hover{
+  box-shadow: 0 0 25px rgba(255,255,255, 1)!important;
+  background-color:black;
+  color:white;
+  text-decoration:none;
+}
+
+.centered{
+  text-align:center;
+}
+
+.header-container{
+  height:auto;
+  width:50%;
+  padding-top:6%;
+  padding-left:25%;
+}
+
+.contact-card{
+  margin-left:15vw;
+  margin-top:15vh;
+  width:70vw;
+  height:70vh;
+  border-style:solid;
+}
+
+.footer-text {
+  color:white;
+  position: relative;
+  bottom: 0;
   width: 100%;
-  box-sizing: border-box;
-
-  /* At the bottom of our background stack,
-     let's have a misty grey solid color */
-  /*background-color: #e4e4d9!important;*/
-
-  /* We stack linear gradients on top of each
-     other to create our color strip effect.
-     As you will notice, color gradients are
-     considered to be images and can be
-     manipulated as such */
-  background-color:#222!important;
 }
 
-
-.custom-footer{
-   margin-top: auto;
-   color:#fff!important;
-   background-color: #001E62!important;
+/* -------------- Videos ---------------*/
+.video-box{
+  width:49.9%;
+  float:left;
+}
+.youtube-container{
+  width:560px;
+  height:315px;
 }
 
+.video-icon{
+  height:16pt;
+}
+
+.video-icon:hover{
+  transform:scale(1.4)!important;
+  object-fit: cover;
+}
+
+/* -------------- Disk cover ------------------*/
+.album-cover{
+  width:150px;
+  height:150px;
+  margin:6px;
+}
+
+.album-cover:hover{
+  transform:scale(1.1)!important;
+  object-fit: cover;
+}
+
+/* -------------- Rectangular buttons ------------------*/
+.social-button{
+  background-color:rgba(0,0,0,0);
+  border-style:none;
+  width:200px!important;
+  height:40px!important;
+}
+
+.social-button-img:hover{
+  -webkit-filter: drop-shadow(0 0 15px #fff);
+  filter: drop-shadow(0 0 10px #fff);
+}
+
+.social-button-img-blk:hover{
+  -webkit-filter: drop-shadow(0 0 3px #222);
+  filter: drop-shadow(0 0 3px #222);
+}
 /* -------------- Small screen changes --------------------*/
 @media only screen and (max-width:768px){
-  body{
-          background-image: url('miku-small.jpg')!important;
-          background-attachment:fixed!important;
-        }
-
-  h1{
-    font-size:25px!important;
+  .header-logo{
+    width:75%!important;
   }
 
-  h4{
-    font-size:16px!important;
-  }
-   .fancy{
-      padding-left:1em!important;
-      padding-right:1em!important;
-   }   
-
-   .textpost{
-      padding:2px!important;
-      font-size:14px!important;
-   }
-
-  .iframe-container{
-    margin-left:5%!important;
-    width:90%!important;
+  .header-button{
+    width:80%!important;
+    padding:6px!important;
+    margin:6px!important;
   }
 
-  .textpost-widemargin{
-     padding-top:2px;
-     padding-bottom:2px;
-     padding-left:12px;
-     padding-right:12px;
-     font-size:14px!important;
+  .header-container{
+    width:80%!important;
+    padding-left:10%!important;
+
   }
 
-   .carousel-container{
-      padding-left:0!important;
-      padding-right:0!important;
-   }
+  .video-box{
+    float:none!important;
+    width:100%!important;
+  }
 
-   .half-width{ /*On mobile there's no half-width */
-      width:100%!important;
-    }
+  .youtube-container{
+    width:90vw;
+    height:calc(90vw * 315/560);
+  }
 
-     .menu-custom{
-       color:#ddd!important;
-     }
-
-  .toggle-menu-custom{
-    color:#ddd!important;
-   }
-
-   .toggle-menu-custom:hover{
-    color:#222!important;
-    background-color:#fff!important;
-   }
-
-   .toggle-menu-logo{
-    width:38%!important;
-   }
 }
 
 
-/* ----------------------- Slide show ---------------------*/
-/* https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp */
-
-* {
-  box-sizing: border-box;
-}
-
-/* Position the image container (needed to position the left and right arrows) */
-.container {
-  position: relative;
-}
-
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-
-/* Add a pointer when hovering over the thumbnail images */
-.cursor {
-  cursor: pointer;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 40%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
+/* -------------- Modal -----------------*/
+.modalDialog {
+  font-family: Courier;
+  position: fixed;
   top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,0.8);
+  z-index: 99999;
+  opacity:0;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
 }
 
-/* Container for image text */
-.caption-container {
+.modalDialog:target {
+  opacity:1;
+  pointer-events: auto;
+}
+
+.modalDialog > div {
+  text-align:left;
+  width: 80%;
+  max-width:600px;
+  position: relative;
+  margin: 10% auto;
+  padding: 5px 20px 13px 20px;
+  background: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)),
+    url('bg.png');;
+}
+
+.close {
+  background: #606061;
+  color: #FFFFFF;
+  line-height: 25px;
+  position: absolute;
+  right: -12px;
   text-align: center;
-  background-color: #222;
-  padding: 2px 16px;
-  color: white;
+  top: -10px;
+  width: 24px;
+  text-decoration: none;
+  font-weight: bold;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+  -moz-box-shadow: 1px 1px 3px #000;
+  -webkit-box-shadow: 1px 1px 3px #000;
+  box-shadow: 1px 1px 3px #000;
 }
 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Six columns side by side */
-.column {
-  float: left;
-  width: 16.66%;
-}
-
-/* Add a transparency effect for thumnbail images */
-.demo {
-  opacity: 0.6;
-}
-
-.active,
-.demo:hover {
-  opacity: 1;
-}
-
-/* ---------------- COLLAPSIBLE NAVBAR ---------------*/
-/* https://www.w3schools.com/howto/howto_js_collapsible.asp */
-
-
- /* Style the button that is used to open and close the collapsible content */
- .nav-custom{
-   background-color:rgba(0,0,0,0)!important;
-   border:none!important;
- }
-
- .menu-custom{
-   font-size:20px!important;
-   color:#333!important;
- }
-
- .toggle-menu-custom{
- }
-
- .toggle-menu-custom:hover{
- }
-
-
- .toggle-menu-logo{
-    width:100%;
-   }
-
-
-
- .nav-bigfont{
-   font-size:20px!important;
- }
-
- .dropdown-toggle-custom{
-   background-color:rgba(0,0,0,0)!important;
-   font-size:20px!important;
- }
-
- .dropdown-toggle-custom:hover{
-   background-color:#fff!important;
-   color:#000!important;
- }
-
-.collapsible {}
-
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .collapsible:hover {
-  background-color: #ccc;
-}
-
-/* Style the collapsible content. Note: hidden by default */
-.content {
-   position:absolute;
-  padding: 0 18px;
-  display: none;
-  overflow: hidden;
-  background-color: #000000;
-  width:20%;
-  transition: max-height 0.2s ease-out;
-} 
-
-.content-item{
-   border:none!important;
-   width:100%!important;
-   background-color: inherit;
-}
-
-.text-center{text-align:center!important}
-
-
-/* ---------------------------------------------------*/
-
-
+.close:hover { background:red; }
