@@ -206,7 +206,7 @@ a:hover{
   filter: drop-shadow(0 0 3px #222);
 }
 /* -------------- Small screen changes --------------------*/
-@media only screen and (max-width:768px){
+@media only screen and (max-width:850px){
   .header-logo{
     width:75%!important;
   }
