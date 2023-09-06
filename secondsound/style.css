@@ -28,8 +28,8 @@ a{
 }
 
 .youtube-container{
-  width:560px;
-  height:315px;
+  width:50vw;
+  height:calc(50vw * 315 / 560);
 }
 .carousel-container{
   padding-left:128px!important;
