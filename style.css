@@ -9,6 +9,11 @@
   src: url('MADEINFINITY PERSONALUSE-Thin.otf');
 }
 
+@font-face{
+  font-family:'Gothic';
+  src: url('BLACEB__.TTF');
+}
+
 body {
         margin:0!important;
         background-image: url('bg.png');
